@@ -1,0 +1,14 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"login": true,
+	"preferredVersions": {
+		"wp": "latest",
+		"php": "8.3"
+	},
+	"steps": [
+		{
+			"step": "wp-cli",
+			"command": "wp theme activate finnimal"
+		}
+	]
+}
