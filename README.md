@@ -19,6 +19,7 @@ Finnimal supports the WordPress Site Editor (Full Site Editing). Go to **Appeara
 - Colors and typography
 - Header and footer layouts
 - Page templates
+- Dark/light mode (follows system preference automatically)
 - And more
 
 ## For Developers

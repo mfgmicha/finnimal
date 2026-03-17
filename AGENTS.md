@@ -8,6 +8,7 @@ This is a minimal WordPress Block Theme project.
 - `parts/` - Reusable theme parts (e.g., footer.html)
 - `functions.php` - Theme functions and setup
 - `package.json` - npm scripts and dependencies
+- `theme.json` - Theme settings including dark/light mode support (follows system preference)
 
 ## Available Scripts
 
