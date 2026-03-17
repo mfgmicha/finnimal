@@ -54,12 +54,9 @@ a:hover {
 	text-decoration-style: dashed;
 }
 
-a:visited {
-	color: currentcolor;
-}
-
-/* Focus styles */
+/* Focus styles 
 :where(.wp-site-blocks *:focus) {
 	outline-width: 2px;
 	outline-style: solid;
 }
+*/

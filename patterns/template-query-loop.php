@@ -18,10 +18,10 @@
 	
 	<!-- wp:post-template {"align":"full","layout":{"type":"default"}} -->
 		
-		<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+		<!-- wp:group {"layout":{"type":"flex","justifyContent":"left","alignItems":"center"}} -->
   		<div class="wp-block-group">
-			<!-- wp:post-date {"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}},"fontSize":"small"} /-->
-			<!-- wp:post-title {"isLink":true,"fontSize":"x-large"} /-->
+			<!-- wp:post-date {"isLink":true,"fontSize":"small"} /-->
+			<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
 		</div>
 		<!-- /wp:group -->
 	<!-- /wp:post-template -->

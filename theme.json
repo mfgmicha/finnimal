@@ -9,22 +9,22 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "light-dark(#111111, #FFFFFF)",
+					"color": "light-dark(#111111, #E2D9CA)",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "light-dark(#FFFFFF, #111111)",
+					"color": "light-dark(#E2D9CA, #111111)",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#FFC067",
+					"color": "light-dark(#936A0B,#FFC067)",
 					"name": "Accent 1",
 					"slug": "accent-1"
 				},
 				{
-					"color": "#936A0B",
+					"color": "light-dark(#FFC067,#936A0B)",
 					"name": "Accent 2",
 					"slug": "accent-2"
 				},
@@ -71,12 +71,23 @@
 			"text": "var:preset|color|base"
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|sans-serif"
+			"fontFamily": "var:preset|font-family|sans-serif",
+			"fontWeight": "300",
+			"lineHeight": "1.4",
+			"letterSpacing": "-0.1px"
+			
 		},
 		"elements": {
 			"link": {
 				"color": {
-					"text": "currentColor"
+					"text": "var:preset|color|accent-1"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontWeight": "300",
+					"lineHeight": "1.4",
+					"letterSpacing": "-0.1px"
 				}
 			}
 		}

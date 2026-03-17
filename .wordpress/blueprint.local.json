@@ -16,7 +16,7 @@
 		},
 		{
 			"step": "wp-cli",
-			"command": "wp post create --post_type=page --post_status=publish --post_title='Home' --post_content='this is the home page'"
+			"command": "wp post create --post_type=page --post_status=publish --post_title='Home'"
 		},
 		{
 			"step": "wp-cli",
