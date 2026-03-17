@@ -2,6 +2,8 @@
 
 A clean and minimal WordPress Block Theme.
 
+Named after my dog Finn.
+
 ## For Users
 
 ### Installing the Theme
