@@ -1,7 +1,7 @@
 {
 	"name": "@mfgmicha/finnimal",
 	"version": "0.1.0",
-	"description": "A clean and minimal WordPress Plugin with block.",
+	"description": "A clean and minimal WordPress Block Theme.",
 	"author": "Micha Krapp",
 	"license": "GPL-2.0-or-later",
 	"private": true,
