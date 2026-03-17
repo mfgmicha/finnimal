@@ -4,6 +4,8 @@ A clean and minimal WordPress Block Theme.
 
 Named after my dog Finn.
 
+[![Release](https://github.com/mfgmicha/finnimal/actions/workflows/release.yml/badge.svg)](https://github.com/mfgmicha/finnimal/actions/workflows/release.yml)
+
 ## For Users
 
 ### Installing the Theme
