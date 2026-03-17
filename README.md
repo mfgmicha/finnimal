@@ -53,8 +53,12 @@ This opens a local WordPress instance where you can test changes.
 | `npm run format` | Format code |
 | `npm run lint:css` | Lint CSS files |
 | `npm run lint:js` | Lint JavaScript files |
+| `lint:pkg-json` | Lint package.json |
 | `npm run packages-update` | Update WordPress packages |
 | `npm run zip` | Create distributable ZIP |
+
+All linting commands are run automaitically on the pre-push hook via
+`.husky/pre-push`
 
 ### Project Structure
 
