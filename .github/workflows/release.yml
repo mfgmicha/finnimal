@@ -13,7 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Create theme zip
-        run: tar czf finnimal.zip parts patterns templates functions.php README.md style.css theme.json
+        run: |
+          apt-get update && apt-get install -y zip
+          zip -r finnimal.zip parts patterns templates functions.php README.md style.css theme.json
       - uses: softprops/action-gh-release@v2
         with:
           files: finnimal.zip
