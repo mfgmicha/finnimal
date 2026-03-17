@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+npm run format
+npm run lint:css
+npm run lint:js
+npm run lint:pkg-json

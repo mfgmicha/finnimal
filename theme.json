@@ -8,7 +8,7 @@
 			"defaultGradients": false,
 			"defaultPalette": false,
 			"palette": [
-								{
+				{
 					"color": "light-dark(#111111, #FFFFFF)",
 					"name": "Base",
 					"slug": "base"
@@ -57,10 +57,10 @@
 		"typography": {
 			"fontFamilies": [
 				{
-                    "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell, \"Helvetica Neue\",sans-serif",
-                    "slug": "sans-serif",
-                    "name": "Sans Serif"
-                }
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell, \"Helvetica Neue\",sans-serif",
+					"slug": "sans-serif",
+					"name": "Sans Serif"
+				}
 			]
 		}
 	},
