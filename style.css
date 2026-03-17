@@ -3,7 +3,7 @@ Theme Name: Finnimal
 Theme URI: https://github.com/mfgmicha/finnimal
 Author: Micha Krapp
 Author URI: https://mfgmicha.de
-Description: Finn - the minimal WordPress block theme
+Description: My minimal WordPress block theme
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 8.3
@@ -16,11 +16,17 @@ Text Domain: finnimal
 body {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh); /* evtl. nur 100vh */
+    min-height: 100vh;
 }
 
 body.admin-bar {
     min-height: calc(100vh - 32px);
+}
+
+@media screen and (max-width: 782px) {
+    body.admin-bar {
+        min-height: calc(100vh - 46px);
+    }
 }
 
 .wp-site-blocks {
@@ -31,4 +37,25 @@ body.admin-bar {
 
 main#wp--skip-link--target {
     flex-grow: 1;
+}
+
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+	text-decoration-thickness: 1px; /* !important ? */
+	text-underline-offset: .1em;
+}
+a:hover {
+    text-decoration-style: dashed;
+}
+a:visited {
+    color: currentColor;
+}
+
+/* Focus styles */
+:where(.wp-site-blocks *:focus) {
+	outline-width: 2px;
+	outline-style: solid;
 }

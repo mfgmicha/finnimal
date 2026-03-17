@@ -5,10 +5,42 @@
 		"wp": "latest",
 		"php": "8.3"
 	},
+	"siteOptions": {
+		"blogname": "Finnimal (dev)",
+		"blogdescription": "Coffee Developer"
+	},
 	"steps": [
 		{
 			"step": "wp-cli",
+			"command": "wp option set show_on_front 'page'"
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp post create --post_type=page --post_status=publish --post_title='Home' --post_content='this is the home page'"
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp option update page_on_front 4"
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp post create --post_type=page --post_status=publish --post_title='Blog'"
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp option update page_for_posts 5"
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp post generate --count=10 --post_status=publish"
+		},
+		{
+			"step": "wp-cli",
 			"command": "wp theme activate finnimal"
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp plugin install create-block-theme --activate"
 		}
 	]
 }

@@ -1,3 +1,3 @@
-# mfgmicha - WordPress Block Theme for mfgmicha.de
+# Finnimal. Finn - Minimal WordPress Block Theme
 
-My WordPress Block Theme for mfgmicha.de
+My minimal WordPress Block Theme
