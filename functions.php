@@ -6,7 +6,7 @@
  *
  * @package mfgmicha
  * @subpackage finnimal
- * @since 
+ * @since 0.0.1
  */
 
 function finnimal_enqueue_styles() {

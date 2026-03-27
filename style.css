@@ -7,38 +7,39 @@ Description: My minimal WordPress block theme
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 8.3
-Version: 0.1.0
+Version: 0.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: finnimal
 */
 
+/* Page layout: min height full-page */
+
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body.admin-bar {
-	min-height: calc(100vh - 32px);
+  min-height: calc(100vh - 32px);
 }
 
 @media screen and (max-width: 782px) {
-
-	body.admin-bar {
-		min-height: calc(100vh - 46px);
-	}
+  body.admin-bar {
+    min-height: calc(100vh - 46px);
+  }
 }
 
 .wp-site-blocks {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 /* stylelint-disable selector-max-id, selector-id-pattern */
 main#wp--skip-link--target {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 /*
@@ -46,12 +47,12 @@ main#wp--skip-link--target {
  * https://github.com/WordPress/gutenberg/issues/42319
  */
 a {
-	text-decoration-thickness: 1px; /* !important ? */
-	text-underline-offset: 0.1em;
+  text-decoration-thickness: 1px; /* !important ? */
+  text-underline-offset: 0.1em;
 }
 
 a:hover {
-	text-decoration-style: dashed;
+  text-decoration-style: dashed;
 }
 
 /* Focus styles

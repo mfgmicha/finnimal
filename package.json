@@ -1,31 +1,31 @@
 {
-	"name": "@mfgmicha/finnimal",
-	"version": "0.1.0",
-	"description": "A clean and minimal WordPress Block Theme.",
-	"author": "Micha Krapp",
-	"license": "GPL-2.0-or-later",
-	"keywords": [
-		"wordpress",
-		"theme"
-	],
-	"homepage": "https://github.com/mfgmicha/finnimal",
-	"repository": "https://github.com/mfgmicha/finnimal",
-	"bugs": "https://github.com/mfgmicha/finnimal/issues",
-	"private": true,
-	"devDependencies": {
-		"@commitlint/cli": "^20.4.4",
-		"@commitlint/config-conventional": "^20.4.4",
-		"@wordpress/scripts": "^31.6.0",
-		"husky": "^9.1.7"
-	},
-	"scripts": {
-		"start": "npx @wp-playground/cli server --auto-mount --blueprint=.wordpress/blueprint.local.json",
-		"format": "wp-scripts format",
-		"lint:css": "wp-scripts lint-style --fix",
-		"lint:js": "wp-scripts lint-js --fix",
-		"lint:pkg-json": "wp-scripts lint-pkg-json",
-		"packages-update": "wp-scripts packages-update",
-		"zip": "zip -r finnimal.zip parts patterns templates functions.php README.md style.css theme.json",
-		"prepare": "husky"
-	}
+  "name": "@mfgmicha/finnimal",
+  "version": "0.2.0",
+  "description": "A clean and minimal WordPress Block Theme.",
+  "author": "Micha Krapp",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "homepage": "https://github.com/mfgmicha/finnimal",
+  "repository": "https://github.com/mfgmicha/finnimal",
+  "bugs": "https://github.com/mfgmicha/finnimal/issues",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.4",
+    "@commitlint/config-conventional": "^20.4.4",
+    "@wordpress/scripts": "^31.6.0",
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "start": "npx @wp-playground/cli server --auto-mount --blueprint=.wordpress/blueprint.local.json",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style --fix",
+    "lint:js": "wp-scripts lint-js --fix",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "zip": "zip -r finnimal.zip parts patterns templates functions.php README.md style.css theme.json",
+    "prepare": "husky"
+  }
 }
