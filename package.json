@@ -26,6 +26,6 @@
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"packages-update": "wp-scripts packages-update",
 		"zip": "zip -r finnimal.zip parts patterns templates functions.php README.md style.css theme.json",
-		"prepare": "husky"
+		"prepare": ".husky/pre-push"
 	}
 }
