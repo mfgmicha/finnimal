@@ -2,7 +2,7 @@
 /**
  * Title: List of posts, 1 column
  * Slug: finnimal/template-query-loop
- * Inserter: false
+ * Inserter: true
  * Categories: query
  * Block Types: core/query
  * Description: A list of posts, 1 column, with featured image and post date.
@@ -15,9 +15,9 @@
 
 <!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"layout":{"type":"constrained"}} -->
 <div class="wp-block-query">
-	
+
 	<!-- wp:post-template {"align":"full","layout":{"type":"default"}} -->
-		
+
 		<!-- wp:group {"layout":{"type":"flex","justifyContent":"left","alignItems":"center"}} -->
   		<div class="wp-block-group">
 			<!-- wp:post-date {"isLink":true,"fontSize":"small"} /-->
@@ -25,7 +25,7 @@
 		</div>
 		<!-- /wp:group -->
 	<!-- /wp:post-template -->
-	
+
 	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 		<!-- wp:query-no-results -->
@@ -35,7 +35,7 @@
 		<!-- /wp:query-no-results -->
 	</div>
 	<!-- /wp:group -->
-	
+
 	<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
