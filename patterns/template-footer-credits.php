@@ -17,7 +17,10 @@
 <p class="has-small-font-size" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)">
     <span>© <?php echo date( "Y" ); ?> · An </span>
     <a href="https://mkwp.de" target="_blank">MKWP</a>
-    <span> Project. Powered by </span>
+    <span> Project · Powered by </span>
     <a href="https://wordpress.org" target="_blank" rel="noreferrer noopener">WordPress</a>
+    <span> · Hosted on </span>
+    <a href="https://all-inkl.com/PA5DA1F80045605" target="_blank" rel="noreferrer noopener">All-Inkl</a>
+    <span> in DE</span>
 </p>
 <!-- /wp:paragraph -->
