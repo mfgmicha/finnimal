@@ -1,0 +1,24 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: https://data.forgejo.org/actions/checkout@v6
+      - name: Create theme zip
+        run: |
+          apt-get update && apt-get install -y zip
+          mkdir -p dist/release
+          zip -r dist/release/finnimal.zip parts patterns templates functions.php README.md style.css theme.json
+      - name: Upload theme zip to release
+        uses: https://data.forgejo.org/actions/forgejo-release@v2.13.4
+        with:
+          direction: upload
+          release-dir: dist/release
