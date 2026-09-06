@@ -4,10 +4,10 @@ Theme URI: https://github.com/mfgmicha/finnimal
 Author: Micha Krapp
 Author URI: https://mfgmicha.de
 Description: My minimal WordPress block theme
-Requires at least: 6.9
-Tested up to: 6.9
+Requires at least: 7.1
+Tested up to: 7.1
 Requires PHP: 8.3
-Version: 0.4.2
+Version: 0.5.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: finnimal
@@ -59,16 +59,6 @@ a:hover {
 /* Post-format-specific query loop layouts. */
 .finnimal-post-image,
 .finnimal-post-status {
-	display: none;
-}
-
-.wp-block-post.format-image > .finnimal-post-default,
-.wp-block-post.format-status > .finnimal-post-default {
-	display: none;
-}
-
-.wp-block-post.format-image > .finnimal-post-image,
-.wp-block-post.format-status > .finnimal-post-status {
 	display: grid;
 	box-sizing: border-box;
 	width: 100vw;
@@ -77,11 +67,11 @@ a:hover {
 	padding: var(--wp--preset--spacing--50);
 }
 
-.wp-block-post.format-image > .finnimal-post-image {
+.finnimal-post-image {
 	background-color: var(--wp--preset--color--accent-2);
 }
 
-.wp-block-post.format-status > .finnimal-post-status {
+.finnimal-post-status {
 	background-color: var(--wp--preset--color--accent-6);
 }
 

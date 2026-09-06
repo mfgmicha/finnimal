@@ -1,19 +1,19 @@
 <?php
 /**
- * Title: List of posts, 1 column
- * Slug: finnimal/template-query-loop
- * Inserter: true
+ * Title: Archive list of posts, 1 column
+ * Slug: finnimal/template-archive-query-loop
+ * Inserter: false
  * Categories: query
  * Block Types: core/query
- * Description: A post-format-aware list with special layouts for image and status posts.
+ * Description: A post-format-aware archive list that inherits the current archive query.
  *
  * @package mfgmicha
  * @subpackage finnimal
- * @since 0.1
+ * @since 0.4.3
  */
 ?>
 
-<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"layout":{"type":"constrained"}} -->
+<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"layout":{"type":"constrained"}} -->
 <div class="wp-block-query">
 
 	<!-- wp:post-template {"align":"full","layout":{"type":"default"}} -->
@@ -25,7 +25,7 @@
 	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 		<!-- wp:query-no-results -->
 			<!-- wp:paragraph -->
-			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'finnimal' ); ?></p>
+			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned by a search.', 'finnimal' ); ?></p>
 			<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

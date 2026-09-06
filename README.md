@@ -30,7 +30,7 @@ Finnimal supports the WordPress Site Editor (Full Site Editing). Go to **Appeara
 
 - Node.js 18+
 - npm 9+
-- WordPress 6.9+
+- WordPress 7.1+
 - PHP 8.3+
 
 ### Setup
