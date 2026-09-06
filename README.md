@@ -30,6 +30,8 @@ Finnimal supports the WordPress Site Editor (Full Site Editing). Go to **Appeara
 
 - Node.js 18+
 - npm 9+
+- WordPress 6.9+
+- PHP 8.3+
 
 ### Setup
 
@@ -59,7 +61,7 @@ This opens a local WordPress instance where you can test changes.
 | `npm run packages-update` | Update WordPress packages |
 | `npm run zip` | Create distributable ZIP |
 
-All linting commands are run automaitically on the pre-push hook via
+Formatting and linting commands are run automatically on the pre-push hook via
 `.husky/pre-push`
 
 ### Project Structure
@@ -68,7 +70,12 @@ All linting commands are run automaitically on the pre-push hook via
 finnimal/
 ├── templates/       # Theme template files (.html)
 ├── parts/           # Reusable parts (footer, header, etc.)
+├── patterns/        # Reusable block patterns
 ├── functions.php    # Theme functions and setup
+├── style.css        # Theme metadata and custom styles
+├── theme.json       # Theme settings and styles
+├── .wordpress/      # WordPress Playground blueprints
+├── src/              # JavaScript source files
 └── package.json     # npm scripts and dependencies
 ```
 
