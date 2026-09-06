@@ -5,7 +5,7 @@
  * Inserter: true
  * Categories: query
  * Block Types: core/query
- * Description: A list of posts, 1 column, with featured image and post date.
+ * Description: A post-format-aware list with special layouts for image and status posts.
  *
  * @package mfgmicha
  * @subpackage finnimal
@@ -18,12 +18,9 @@
 
 	<!-- wp:post-template {"align":"full","layout":{"type":"default"}} -->
 
-		<!-- wp:group {"layout":{"type":"flex","justifyContent":"left","alignItems":"center"}} -->
-  		<div class="wp-block-group">
-			<!-- wp:post-date {"isLink":true,"fontSize":"small"} /-->
-			<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
-		</div>
-		<!-- /wp:group -->
+		<!-- wp:pattern {"slug":"finnimal/post-listing-default"} /-->
+		<!-- wp:pattern {"slug":"finnimal/post-listing-image"} /-->
+		<!-- wp:pattern {"slug":"finnimal/post-listing-status"} /-->
 	<!-- /wp:post-template -->
 
 	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
