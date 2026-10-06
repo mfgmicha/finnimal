@@ -57,6 +57,10 @@ a:hover {
 }
 
 /* Post-format-specific query loop layouts. */
+.finnimal-post-default {
+	margin-block: var(--wp--preset--spacing--30);
+}
+
 .finnimal-post-image,
 .finnimal-post-status {
 	display: grid;
