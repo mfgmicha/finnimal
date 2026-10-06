@@ -221,6 +221,11 @@
 			}
 		},
 		"blocks": {
+			"core/post-template": {
+				"spacing": {
+					"blockGap": "0"
+				}
+			},
 			"core/code": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|fira-code",
